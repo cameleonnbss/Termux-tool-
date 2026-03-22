@@ -1,0 +1,4 @@
+requests
+colorama
+pillow
+python-whois
