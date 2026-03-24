@@ -130,7 +130,20 @@ pip install pillow
 ```bash
 pip install python-whois --break-system-packages
 ```
+## 📶 WiFi Module (Termux Only)
 
+Requires:
+- termux-api package
+- Termux:API Android app
+- Location permission enabled
+
+Command used:
+termux-wifi-scaninfo
+
+Limitations:
+- No monitor mode
+- No packet sniffing
+- No WiFi hacking
 ---
 
 ### 5️⃣ Run
