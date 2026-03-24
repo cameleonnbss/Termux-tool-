@@ -2433,36 +2433,36 @@ def contact():
 # ══════════════════════════════════════════════
 
 MENU = f"""
-{LC}┌─────────────── {LY}🌐 RÉSEAU/IP{LC} ─────────────────┐  {LC}┌─────────────── {LY}🌍 WEB{LC} ─────────────┐
-{LC}│ {LG}01{LW} IP Info & Tracker                    {LC}│  {LC}│           {LG}07{LW} HTTP Header Inspector              {LC}│
-{LC}│ {LG}02{LW} DNS Lookup (DoH, 10 types)           {LC}│  {LC}│           {LG}08{LW} SSL Certificate Inspector          {LC}│
-{LC}│ {LG}03{LW} WHOIS / Reverse DNS                  {LC}│  {LC}│           {LG}09{LW} Technology Detector (30+ CMS)      {LC}│
-{LC}│ {LG}04{LW} Port Scanner (top ports / custom)    {LC}│  {LC}│           {LG}10{LW} URL Redirect Tracer               {LC}│
-{LC}│ {LG}05{LW} Subdomain Finder (130+ wordlist)     {LC}│  {LC}│           {LG}11{LW} WAF / Firewall Detector           {LC}│
-{LC}│ {LG}06{LW} ASN / BGP Lookup                     {LC}│  {LC}│           {LG}18{LW} Robots / Sitemap Reader          {LC}│
-{LC}└─────────────────────────────────────────────┘         {LC}│ {LG}19{LW} Wayback Machine                {LC}│
-                                                                              {LC}│ {LG}20{LW} Google Dork Generator          {LC}│
-{LC}┌─────────────── {LY}🔍 OSINT{LC} ────────────────────┐    {LC}│ {LG}21{LW} Advanced Dork Builder         {LC}│
-{LC}│ {LG}22{LW} OSINT Dork Builder (personne)        {LC}│                  {LC}│ {LG}41{LW} Shodan & Intel Platforms      {LC}│
-{LC}│ {LG}23{LW} Phone Number Info + OSINT            {LC}│             {LC}└─────────────────────────────────────────┘
+{LC}┌─────────────── {LY} RÉSEAU/IP{LC} ─────────────────┐  {LC}┌─────────────── {LY} WEB{LC} ──────────────────────┐
+{LC}│ {LG}01{LW} IP Info & Tracker                    {LC}│  {LC}│ {LG}07{LW} HTTP Header Inspector              {LC}│
+{LC}│ {LG}02{LW} DNS Lookup (DoH, 10 types)           {LC}│  {LC}│ {LG}08{LW} SSL Certificate Inspector          {LC}│
+{LC}│ {LG}03{LW} WHOIS / Reverse DNS                  {LC}│  {LC}│ {LG}09{LW} Technology Detector (30+ CMS)      {LC}│
+{LC}│ {LG}04{LW} Port Scanner (top ports / custom)    {LC}│  {LC}│ {LG}10{LW} URL Redirect Tracer               {LC}│
+{LC}│ {LG}05{LW} Subdomain Finder (130+ wordlist)     {LC}│  {LC}│ {LG}11{LW} WAF / Firewall Detector           {LC}│
+{LC}│ {LG}06{LW} ASN / BGP Lookup                     {LC}│  {LC}│ {LG}18{LW} Robots / Sitemap Reader          {LC}│
+{LC}└─────────────────────────────────────────────┘  {LC}│ {LG}19{LW} Wayback Machine                {LC}│
+                                                   {LC}│ {LG}20{LW} Google Dork Generator          {LC}│
+{LC}┌─────────────── {LY} OSINT{LC} ────────────────────┐  {LC}│ {LG}21{LW} Advanced Dork Builder         {LC}│
+{LC}│ {LG}22{LW} OSINT Dork Builder (personne)        {LC}│  {LC}│ {LG}41{LW} Shodan & Intel Platforms      {LC}│
+{LC}│ {LG}23{LW} Phone Number Info + OSINT            {LC}│  {LC}└─────────────────────────────────────────┘
 {LC}│ {LG}24{LW} Email / Mail OSINT                   {LC}│
-{LC}│ {LG}25{LW} Username Tracker (60+ sites)         {LC}│  {LC}┌─────────────── {LY}🔐 HASH / PASSWORD{LC} ────────┐
+{LC}│ {LG}25{LW} Username Tracker (60+ sites)         {LC}│  {LC}┌─────────────── {LY} HASH / PASSWORD{LC} ────────┐
 {LC}│ {LG}28{LW} Profile Builder                      {LC}│  {LC}│ {LG}29{LW} Hash Tools (générer/cracker)     {LC}│
 {LC}│ {LG}32{LW} Reverse Image Search                 {LC}│  {LC}│ {LG}30{LW} Password Tools (générer/tester)  {LC}│
 {LC}│ {LG}33{LW} Quick Recon (tout-en-un)             {LC}│  {LC}│ {LG}31{LW} Metadata Extractor (GPS EXIF)    {LC}│
 {LC}│ {LG}34{LW} Network Info (local + public)        {LC}│  {LC}└─────────────────────────────────────────┘
 {LC}└─────────────────────────────────────────────┘
-                                                                             {LC}┌─────────────── {LY}🛠️  AVANCÉ / TERMUX{LC} ──────────┐
-{LC}┌─────────────── {LY}💥 BREACH / LEAK{LC} ────────────┐             {LC}│ {LG}12{LW} Traceroute (Termux compatible)  {LC}│
-{LC}│ {LG}26{LW} Breach Search Engine                 {LC}│  {LC}│                {LG}13{LW} Banner Grabber                  {LC}│
-{LC}│ {LG}27{LW} XposedOrNot API [GRATUIT, sans clé]  {LC}│  {LC}│                {LG}14{LW} MAC Vendor Lookup               {LC}│
-{LC}│ {LG}36{LW} LeakCheck API [7.5B+, clé gratuite]  {LC}│  {LC}│                {LG}15{LW} HTTP Method Tester              {LC}│
-{LC}│ {LG}37{LW} BreachDirectory API [RapidAPI free]  {LC}│  {LC}│                {LG}16{LW} CORS Checker                    {LC}│
-{LC}└─────────────────────────────────────────────┘               {LC}│ {LG}17{LW} TOR Exit Node Check             {LC}│
-                                                                                    {LC}│ {LG}35{LW} WiFi Scanner (Termux-API)        {LC}│
-{LC}┌─────────────── {LY}🔩 OPEN SOURCE{LC} ─────────────┐  {LC}└─────────────────────────────────────────┘
+                                                   {LC}┌─────────────── {LY}🛠️  AVANCÉ / TERMUX{LC} ──────────┐
+{LC}┌─────────────── {LY} BREACH / LEAK{LC} ────────────┐  {LC}│ {LG}12{LW} Traceroute (Termux compatible)  {LC}│
+{LC}│ {LG}26{LW} Breach Search Engine                 {LC}│  {LC}│ {LG}13{LW} Banner Grabber                  {LC}│
+{LC}│ {LG}27{LW} XposedOrNot API [GRATUIT, sans clé]  {LC}│  {LC}│ {LG}14{LW} MAC Vendor Lookup               {LC}│
+{LC}│ {LG}36{LW} LeakCheck API [7.5B+, clé gratuite]  {LC}│  {LC}│ {LG}15{LW} HTTP Method Tester              {LC}│
+{LC}│ {LG}37{LW} BreachDirectory API [RapidAPI free]  {LC}│  {LC}│ {LG}16{LW} CORS Checker                    {LC}│
+{LC}└─────────────────────────────────────────────┘  {LC}│ {LG}17{LW} TOR Exit Node Check             {LC}│
+                                                   {LC}│ {LG}35{LW} WiFi Scanner (Termux-API)        {LC}│
+{LC}┌─────────────── {LY} OPEN SOURCE{LC} ─────────────┐  {LC}└─────────────────────────────────────────┘
 {LC}│ {LG}80{LW} Hub Outils Open Source               {LC}│
-{LC}│ {LG}81{LW} Holehe  (email 120+ sites)           {LC}│  {LC}┌─────────────── {LY}📡 EXTRA{LC} ─────────────────┐
+{LC}│ {LG}81{LW} Holehe  (email 120+ sites)           {LC}│  {LC}┌─────────────── {LY} EXTRA{LC} ─────────────────┐
 {LC}│ {LG}82{LW} h8mail  (breach hunting)             {LC}│  {LC}│ {LG}90{LW} OpenRouter IA [GRATUIT]          {LC}│
 {LC}│ {LG}83{LW} Sherlock (username 400+)             {LC}│  {LC}│ {LG}98{LW} Gestionnaire Clés API            {LC}│
 {LC}│ {LG}84{LW} theHarvester (recon domaine)         {LC}│  {LC}│ {LG}99{LW} Contact                         {LC}│
