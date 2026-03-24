@@ -1,3 +1,4 @@
+
 # 🛠️ camzzz multi-tool — Termux Edition
 
 A powerful OSINT / Network / Web / Hash toolkit running entirely on Android via Termux.  
@@ -80,3 +81,148 @@ Download Termux from F-Droid (recommended) or Play Store:
 ```bash
 pkg update && pkg upgrade -y
 pkg install python git libjpeg-turbo libpng freetype clang openssl -y
+````
+
+---
+
+### 3️⃣ Get the tool
+
+**Option A — Clone from GitHub**
+
+```bash
+git clone https://github.com/cameleonnbss/Termux-tool-
+cd Termux-tool-
+```
+
+**Option B — Copy from phone storage**
+
+```bash
+termux-setup-storage
+cp /sdcard/Download/camzzz-tool.py ~/
+cd ~
+```
+
+**Option C — Manual**
+
+```bash
+nano ~/camzzz-tool.py
+```
+
+---
+
+### 4️⃣ Install Python dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+#### Fix common errors (Termux)
+
+**Pillow issue**
+
+```bash
+pkg install libjpeg-turbo libpng freetype clang -y
+pip install pillow
+```
+
+**python-whois issue**
+
+```bash
+pip install python-whois --break-system-packages
+```
+
+---
+
+### 5️⃣ Run
+
+```bash
+python camzzz-tool.py
+```
+
+---
+
+## 🖥️ Installation on Linux
+
+### Debian / Ubuntu / Kali
+
+```bash
+sudo apt update && sudo apt install python3 python3-pip git -y
+git clone https://github.com/cameleonnbss/Termux-tool-
+cd Termux-tool-
+pip3 install -r requirements.txt
+python3 camzzz-tool.py
+```
+
+---
+
+### Arch / Manjaro
+
+```bash
+sudo pacman -S python python-pip git
+git clone https://github.com/cameleonnbss/Termux-tool-
+cd Termux-tool-
+pip install -r requirements.txt
+python camzzz-tool.py
+```
+
+---
+
+## 🪟 Installation on Windows
+
+```bash
+# Install Python 3.10+ from https://python.org (check "Add to PATH")
+git clone https://github.com/cameleonnbss/Termux-tool-
+cd Termux-tool-
+pip install -r requirements.txt
+python camzzz-tool.py
+```
+
+> If `python` is not recognized, try `py`
+
+---
+
+## 📦 Dependencies
+
+| Package        | Usage            |
+| -------------- | ---------------- |
+| requests       | HTTP requests    |
+| colorama       | Colored terminal |
+| dnspython      | DNS queries      |
+| python-whois   | WHOIS            |
+| beautifulsoup4 | HTML parsing     |
+| lxml           | Fast parser      |
+| httpx          | Advanced HTTP    |
+| rich           | CLI UI           |
+| Pillow         | Image metadata   |
+| exifread       | EXIF extraction  |
+
+---
+
+## ⚠️ Disclaimer / Avertissement
+
+This project is for educational and authorized security research purposes only.
+Do NOT use this tool on systems or people without explicit authorization.
+The author is not responsible for any misuse.
+
+Ce projet est uniquement destiné à l'apprentissage et à la recherche en sécurité autorisée.
+N'utilise pas cet outil sans autorisation explicite.
+L'auteur décline toute responsabilité en cas de mauvaise utilisation.
+
+---
+
+## 👨‍💻 Author / Auteur
+
+camzzz
+
+Discord : cameleonmortis
+GitHub : [https://github.com/cameleonnbss](https://github.com/cameleonnbss)
+
+---
+
+ Status
+
+Termux ✔
+Linux ✔
+Windows ✔
+
+```
